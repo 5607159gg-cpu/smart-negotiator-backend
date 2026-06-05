@@ -18,7 +18,7 @@ app.add_middleware(
 )
 
 # 🔑 تم وضع مفتاح الـ API الخاص بك هنا بنجاح
-GEMINI_API_KEY = "AQ.Ab8RN6J-FhMVKxRWsGaTz_VvYIwWC4vmzRm_bVLN6R2ZncsBeA"
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 # تجهيز عميل جوجل الذكي الحديث لعام 2026
 client = genai.Client(api_key=GEMINI_API_KEY)
