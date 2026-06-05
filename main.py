@@ -18,10 +18,14 @@ app.add_middleware(
 )
 
 # 🔑 تم وضع مفتاح الـ API الخاص بك هنا بنجاح
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+
 
 # تجهيز عميل جوجل الذكي الحديث لعام 2026
-client = genai.Client(api_key=GEMINI_API_KEY)
+# الخاص بك هنا بنجاح API تم تفعيل قراءة مفتاح الـ
+# (سطر 21 القديم اتمسح خلاص)
+
+# تجهيز عميل جوجل الذكي الحديث بالأقواس الفارغة ليقرأ المفتاح السري تلقائياً
+client = genai.Client()
 
 # هندسة الأوامر الصارمة (System Prompts) لتوجيه شخصية المستشار والمفاوض
 PROMPT_SEARCH = (
